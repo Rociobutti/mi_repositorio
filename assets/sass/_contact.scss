@@ -1,0 +1,82 @@
+/*Colours*/
+$violetdark-one: #280D22;
+$violetdark-two: #300F27;
+$violetdark-three: #35162E;
+$violetdark-four: #3A1631;
+
+$violetlight-one: #491C3A;
+$violetlight-three: #512547;
+$violetlight-three: #66305C;
+$violetlight-four: #B77DAF;
+
+$lightercolor-one: #FAF3CB;
+$lightercolor-two: #F2EFDF;
+$lightercolor-three: #EFCAE9;
+
+
+body{
+     #contactkcg {
+         background-color: $lightercolor-three;
+     }
+      .toptitles {
+        padding-top: 80px;
+        text-align: center;
+        padding-bottom: 30px;
+        color: $violetdark-two;
+           .space {
+               line-height: 20px;
+           }
+       }
+          form {
+              .btn {
+                  background-color: $lightercolor-three;
+                  color: $violetlight-three;
+                  border-color: $violetlight-three;
+                     :hover {
+                         background-color: $violetlight-four;
+                     } 
+
+              }
+              fieldset {
+                background-color: $violetlight-four;
+                border-radius: 5px;
+                margin: 0 2px;
+                padding: .35em .625em .75em;
+                display: flex;
+                  .contact-aside {
+                   display: flex;
+                   flex-direction: column;
+                   flex-wrap: nowrap;
+                     .img-aside {
+                        order: 1;
+                        align-self: auto;
+                        min-height: auto;
+                        min-width: 0;
+                           .contactphone {
+                             width: 35%;
+                             height: auto;
+                         }
+                     }
+                     .form-aside {
+                        order: 2;
+                         justify-content: flex-end;
+                         align-self: auto;
+                         min-height: auto;
+                         min-width: 0;
+                         position: relative;
+                         bottom: 330px;
+                         left: 100px;
+                     }
+        
+                     .form-control {
+                         margin-top: 5px;
+                         margin-bottom: 5px;
+                         width: 80%;
+                     }
+              } }  
+
+
+
+    
+}}
+

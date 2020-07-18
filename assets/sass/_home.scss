@@ -1,0 +1,335 @@
+/*Colours*/
+$violetdark-one: #280D22;
+$violetdark-two: #300F27;
+$violetdark-three: #35162E;
+$violetdark-four: #3A1631;
+
+$violetlight-one: #491C3A;
+$violetlight-two: #512547;
+$violetlight-three: #66305C;
+$violetlight-four: #B77DAF;
+
+$lightercolor-one: #FAF3CB;
+$lightercolor-two: #F2EFDF;
+
+/*Media Queries*/
+$smartphones: 480px;
+$tablets: 768px;
+$desktops: 992px;
+$Largedesktops: 1200px; 
+
+
+/*HOME*/
+.firstcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-right: 13%;
+    margin-left: 13%;
+ div.A1 {
+    order: 1;
+    flex: 1 1500px;
+    align-self: auto;
+    min-height: auto;
+    min-width: 0;
+}
+ div.B1 {
+    order: 2;
+   flex: 1 2000px;
+    justify-content: flex-end;
+    align-self: auto;
+    min-height: auto;
+    min-width: 0;
+}
+h1 {
+    padding-top: 50%;
+    color: $lightercolor-one;
+    font-size: 3.5rem;
+}
+p {
+    color: $lightercolor-one;
+    font-size: 14px;
+    padding-top: 6px;
+}
+}    
+.img-principal {
+max-width: 90%;
+height: auto;
+float: right;
+padding-top: 80px;
+padding-bottom: 0px;
+}
+
+section {
+    background-color: $violetdark-three;
+    margin-top: 20px;
+ .firstcontainer {
+    div.A2 {
+        order: 1;
+        justify-content: flex-start;
+    }
+        div.B2 {
+        order: 2;
+        justify-content: flex-end;
+        padding-top: 30px;
+    }
+    .stackedbooks {
+        max-width: 35%;
+        padding-top: 15px;
+    }
+    h2 {
+        color: $lightercolor-one;
+        font-size: 2.6rem;
+    }
+    .selltext {
+        background-color: none;
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+    }
+ }
+
+
+} /*end of section*/
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    color: $violetdark-two;
+    background-color: $lightercolor-two ;
+    .title {
+        color: $violetlight-two;
+        padding-top: 0%;
+        
+    }
+    h4 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-weight: 600;      
+        font-size: 22px;
+           .lila {
+            background-color: #EFCAE9;
+            padding-top: 3px;
+            padding-bottom: 1px;
+            padding-right: 10px;
+           }
+    }
+    p {
+        color: $violetdark-two;
+        font-size: 17px;
+         .textopacity {
+             color: $violetlight-one;
+             line-height: 10px;
+         }
+    }
+    .card-body {      
+        .right {
+            padding-top: 15px;
+                .btn {
+                    color: $lightercolor-two;
+                    background-color: $violetlight-three;
+                }
+        }
+    }
+}
+
+article {
+    padding-top: 30px;
+    text-align: center;
+        h2 {
+            font-size: 2rem;
+            color: $lightercolor-one;
+        }
+        h4 {
+            color: $lightercolor-one;
+        }
+    .bookboxt5 {
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-bottom: 25px;
+           @mixin booktop5 ($order) {
+            order: ($order);
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            min-height: auto;
+            min-width: 0;
+            align-items: center;
+           }
+           div.one {
+               @include booktop5(1)
+           }
+           div.two {
+            @include booktop5(2)
+           }
+           div.three {
+            @include booktop5(3)
+           }
+          div.four {
+            @include booktop5(4)
+           }
+           div.five {
+            @include booktop5(5)
+            }    
+    .sizetop5 {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-right: auto;
+            margin-bottom: 0.5%;
+            margin-left: auto;
+        }
+    h3 {
+        color: $lightercolor-two;
+
+    }
+    h4 {
+        color: $violetlight-four;
+    }
+
+
+    }    
+
+}
+
+
+
+
+/*----------------------------------------------------------------------*/
+@media (max-width: $desktops) {
+    
+    .firstcontainer {  
+         h1 {
+            font-size: 2.6rem;
+        }   
+    }
+  section {
+        .firstcontainer {
+        .stackedbooks {
+            max-width: 50%;
+            padding-top: 55px;
+        } 
+    }}
+} /*end of destops responsive 992*/    
+
+
+@media (max-width: $tablets) {
+.firstcontainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-right: 10%;
+        margin-left: 10%;
+    
+    div.A1 {
+        order: 1;
+        flex: 1 0px;
+        align-self: auto;
+        min-height: auto;
+        min-width: 0;
+        color: royalblue;
+    }
+    
+    div.B1 {
+        order: 2;
+        flex: 1 0px;
+        justify-content: center;
+        align-self: auto;
+        min-height: auto;
+        min-width: 0;
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 100px;
+    }
+
+    div.A2 {
+        order: 2;
+        justify-content: flex-start;
+    }
+    div.B2 {
+        order: 1;
+        justify-content: flex-end;
+        padding-top: 15px;
+    }
+}
+
+article {
+.bookboxt5 {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    div {
+        display: grid;
+        display: inline-block;
+        justify-content: center;
+    }
+    .sizetop5 {
+        display: flex;
+        width: 50%;
+        height: auto;
+        align-items: center;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+    }
+}
+}
+}/*end of tablets responsive 768*/
+
+
+@media (max-width: $smartphones) {
+    
+    .firstcontainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-right: 10%;
+            margin-left: 10%;        
+        div.A1 {
+            order: 1;
+            flex: 1 0px;
+            align-self: auto;
+            min-height: auto;
+            min-width: 0;     
+        }
+        
+        div.B1 {
+            order: 2;
+            flex: 1 0px;
+            justify-content: center;
+            align-self: auto;
+            min-height: auto;
+            min-width: 0;
+        }
+    }
+
+    section {
+        .firstcontainer {
+        .stackedbooks {
+            max-width: 75%;
+            padding-top: 55px;
+            margin-left: 10%;
+            margin-right: 10%;
+        } 
+    }}
+    
+} /*end of smartphones 480 responsive*/

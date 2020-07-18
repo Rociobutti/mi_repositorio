@@ -1,0 +1,234 @@
+/*Colours*/
+$violetdark-one: #280D22;
+$violetdark-two: #300F27;
+$violetdark-three: #35162E;
+$violetdark-four: #3A1631;
+
+$violetlight-one: #491C3A;
+$violetlight-two: #512547;
+$violetlight-three: #66305C;
+$violetlight-four: #B77DAF;
+
+$lightercolor-one: #FAF3CB;
+$lightercolor-two: #F2EFDF;
+
+body {
+    #bookstorebkg {
+        background-color: #EFCAE9;
+    .toptitles {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: $violetdark-two;
+    }
+
+}
+} /*end body*/
+
+
+.bookcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 13%;
+    margin-left: 13%;
+      .bookstore  {
+           position: relative;
+           display: flex;
+           padding-top: 25px;
+           width: 48%;
+           height: 270px;
+           margin-bottom: 55px; 
+           background-color:#E0B1D5;  
+           margin-right: 3px;
+           border-radius: 5px;
+                .book-img {
+                    flex-shrink: 0;
+                    padding-right: 12px;
+                    padding-left: 16px;
+                        .book-photo {
+                            width: 210px;
+                            flex-shrink: 0;
+                            bottom: -35px;
+                            left: 35px;
+                            border-radius: 2px;
+                            box-shadow: 3px;
+                        }}
+               .book-content {
+                    box-sizing: border-box;
+                    padding-right: 5px;
+                    overflow: hidden;;
+                        .book-title {
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            color: $violetdark-two;
+                            font-size: 2.3rem; 
+                            margin-top: 5px;                           
+                        }
+                        .book-author {
+                            margin-top: 3px;
+                            font-size: 12.5px;
+                            color: $violetlight-three;
+                            font-weight: bold;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        .description {
+                            margin-top: 16px;
+                            margin-right: 8px;
+                            font-size: 15px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical; 
+                            color: #000;                          
+                        }   
+                        .button2 {
+                            color: #fff;
+                            background-color: #8E5088;
+                            border-color: $violetlight-three;
+                            margin-top: 10px;
+                                :hover {
+                                    background-color: #000;
+                                    border-color: $violetlight-three;
+                                } }  
+
+
+
+
+
+                                .modal-dialog {
+                                    margin-top: 150px;
+                                }
+                                .modal-body {
+                                    position: relative;
+                                    padding: 15px;
+                                    color: $violetdark-two;
+                                    background-color: #EFCAE9;
+                                    .title {
+                                        color: $violetlight-two;
+                                        padding-top: 0%;
+                                        
+                                    }
+                                    h4 {
+                                        font-size: 14px;
+                                        padding-bottom: 10px;
+                                    }
+                                    h3 {
+                                        font-weight: 600;      
+                                        font-size: 17px;
+                                           .lila {
+                                            background-color: #E0B1D7;
+                                            padding-top: 3px;
+                                            padding-bottom: 1px;
+                                            padding-right: 10px;
+                                           }
+                                    }
+                                    .bookdescription {
+                                        padding-top: 25px;
+                                    p {
+                                        color: $violetdark-two;
+                                        font-size: 17px;
+                                         .textopacity {
+                                             color: $violetlight-one;
+                                             line-height: 10px;
+                                          
+                                          } 
+                                          .violet {
+                                            padding-top: 25px;
+                                            color: $violetlight-three;
+                                            font-weight: bold;  
+                                         }
+                                    }}
+                                    .card-body {      
+                                        .right {
+                                            padding-top: 15px;
+                                                .btn {
+                                                    color: $lightercolor-two;
+                                                    background-color: $violetlight-three;
+                                                }
+                                        }
+                                    }
+                                }
+                                
+                                
+
+
+               }  /*end bookcontent*/      
+
+       } /*end bookstore*/
+}
+
+.contenedor-modala {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .contenedor-modala button {
+    position: relative;
+    top: 40%;
+  }
+  .contenedor-modalb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .contenedor-modalb button {
+    position: relative;
+    top: 40%;
+  }
+
+
+
+/*----------------------------------------------------------------------*/
+@media (max-width: $desktops) {
+
+.bookcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+      .bookstore  {
+           width: 90%;
+           
+        }}
+} /*end media desktop 990*/
+
+@media (max-width: $tablets) {
+
+    .bookcontainer {
+          .bookstore  {
+               width: 120%;
+               
+            }}
+
+} /*end media tablets 768*/
+
+
+@media (max-width: $smartphones) {
+    .bookcontainer {
+        .bookstore  {
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            height: auto;
+            .book-img {
+                    .book-photo {
+                        margin: auto;
+                        display: flex;
+                        align-content: center;
+
+                    }}
+            .book-content {
+                text-align: center;
+                padding-top: 15px;
+             padding-bottom: 5px;
+            }                  
+          }}
+
+} /*end media smartphones 480*/

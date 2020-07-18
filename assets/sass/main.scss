@@ -1,0 +1,41 @@
+@import "home";
+@import "footer";
+@import "typo";
+@import "navigation";
+@import "buttons";
+@import "bookstore";
+@import "presentaciones";
+@import "staff";
+@import "contact";
+
+
+
+/*Media Queries*/
+$smartphones: 480px;
+$tablets: 768px;
+$desktops: 992px;
+$Largedesktops: 1200px; 
+
+/*Colours*/
+$violetdark-one: #280D22;
+$violetdark-two: #300F27;
+$violetdark-three: #35162E;
+$violetdark-four: #3A1631;
+
+$violetlight-one: #491C3A;
+$violetlight-three: #512547;
+$violetlight-three: #66305C;
+$violetlight-four: #B77DAF;
+
+$lightercolor-one: #FAF3CB;
+$lightercolor-two: #F2EFDF;
+$lightercolor-three: #EFCAE9;
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }

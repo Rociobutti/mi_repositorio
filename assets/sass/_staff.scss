@@ -1,0 +1,141 @@
+/*Colours*/
+$violetdark-one: #280D22;
+$violetdark-two: #300F27;
+$violetdark-three: #35162E;
+$violetdark-four: #3A1631;
+
+$violetlight-one: #491C3A;
+$violetlight-three: #512547;
+$violetlight-three: #66305C;
+$violetlight-four: #B77DAF;
+
+$lightercolor-one: #FAF3CB;
+$lightercolor-two: #F2EFDF;
+$lightercolor-three: #EFCAE9;
+
+body {
+    #staffbkg {
+        background-color: $lightercolor-one;
+      .toptitles {
+         padding-top: 80px;
+         text-align: center;
+         padding-bottom: 30px;
+         color: $violetdark-two;
+         .space {
+             line-height: 15px;
+         }
+        }
+    }
+    .container {
+        .staffbox {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: flex-start;
+            align-items: flex-start;
+            padding-top: 15px;
+            padding-bottom: 25px;
+            @mixin staffplace ($order) {
+                order: ($order);
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: auto;
+                align-self: auto;
+                min-height: auto;
+                min-width: 0;
+                align-items: center;
+                 .staffsize {
+                    max-width: 75%;
+                    }
+                }
+               div.jorge {
+                   @include staffplace(1)
+               }
+               div.tory {
+                @include staffplace(2)
+               }
+               div.rocio {
+                @include staffplace(3)
+               }
+               div.carla {
+                @include staffplace(1)
+               }
+               div.eva {
+               @include staffplace(2)
+               }
+               div.sofia {
+               @include staffplace(3)
+               }
+           .lineheight {
+            padding-top: 15px;
+            padding-bottom: 15px;
+                 .ocupacion {
+                     letter-spacing: 3px;
+                     font-weight: bold;
+                 }
+                 h5 {
+                     font-size: 16px;
+                 }
+                 .staffname {
+                     margin-top: 20px;
+                     margin-bottom: 15px;
+                 }
+           }    
+                   
+        }
+    }
+
+} /*end body*/
+
+
+
+@media (max-width: $tablets) {
+
+body {
+    .container {
+        .staffbox {
+            padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    div {
+        display: grid;
+        display: inline-block;
+        justify-content: center;
+    }
+    .staffsize {
+        display: flex;
+        width: 50%;
+        height: auto;
+        align-items: center;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+    }
+
+        }
+    }
+}
+
+}/*end of tablets responsive 768*/
+
+@media (max-width: $smartphones) {
+
+    body {
+        .container {
+            .staffbox {
+                .staffsize {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}/*end of smartphones 480 responsive*/
